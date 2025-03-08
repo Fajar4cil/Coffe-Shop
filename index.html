@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Acil Shop Coffe</title>
+    <title>Acil Coffe</title>
+    <link rel="icon" href="img/coffee_icon.png" type="image/x-icon" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,6 +18,8 @@
     <!-- Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
 
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- My Style -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -42,40 +45,46 @@
     <!-- Hero Section-->
     <section class="hero" id="home">
       <main class="content">
-        <h1>Ngopi...Ngopi... <span>Mazzseh</span></h1>
-        <p>
+        <h1 data-aos="fade-right">Ngopi...Ngopi... <span>Mazzseh</span></h1>
+        <p data-aos="fade-right">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, eum!
         </p>
-        <a href="#menu" class="cta">Beli Sekarang</a>
+        <a
+          href="#menu"
+          data-aos="fade-zoom-in"
+          data-aos-duration="2000"
+          class="cta"
+          >Beli Sekarang</a
+        >
       </main>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
-      <h2><span>Tentang</span> Kami</h2>
+      <h2 data-aos="fade-down"><span>Tentang</span> Kami</h2>
 
       <div class="row">
-        <div class="about-img">
+        <div data-aos="fade-right" class="about-img">
           <img src="img/coffe3.jpg" alt="Tentang Kami" />
         </div>
         <div class="content">
-          <h3>Kenapa memilih kopi kami?</h3>
-          <p>
+          <h3 data-aos="fade-left">Kenapa memilih kopi kami?</h3>
+          <p data-aos="fade-left">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
             officiis accusamus ex possimus deserunt repellat.
           </p>
-          <p>
+          <p data-aos="fade-left">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
             minima perferendis provident magnam eius! Id deserunt provident
             aperiam quam dolorem.
           </p>
           <br />
           <br />
-          <p>
+          <p data-aos="fade-left">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
             officiis accusamus ex possimus deserunt repellat.
           </p>
-          <p>
+          <p data-aos="fade-left">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
             minima perferendis provident magnam eius! Id deserunt provident
             aperiam quam dolorem.
@@ -86,41 +95,76 @@
 
     <!-- Menu Section -->
     <section id="menu" class="menu">
-      <h2><span>Menu</span> Kami</h2>
-      <p>
+      <h2 data-aos="fade-down"><span>Menu</span> Kami</h2>
+      <p data-aos="fade-up">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
         assumenda architecto aliquam
       </p>
 
       <div class="row">
-        <div class="menu-card">
+        <div
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1500"
+          class="menu-card"
+        >
           <img src="img/1.jpg" alt="Espresso" class="menu-card-img" />
           <h3 class="menu-card-tittle">-Cafe Latte-</h3>
           <p class="menu-card-price">IDR 20K</p>
         </div>
-        <div class="menu-card">
+        <div
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1500"
+          class="menu-card"
+          class="menu-card"
+        >
           <img src="img/2.jpg" alt="Espresso" class="menu-card-img" />
           <h3 class="menu-card-tittle">-Mocca-</h3>
           <p class="menu-card-price">IDR 25K</p>
         </div>
-        <div class="menu-card">
+        <div
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1500"
+          class="menu-card"
+          class="menu-card"
+        >
           <img src="img/3.jpg" alt="Espresso" class="menu-card-img" />
           <h3 class="menu-card-tittle">-Piccolo-</h3>
           <p class="menu-card-price">IDR 20K</p>
         </div>
       </div>
       <div class="row">
-        <div class="menu-card">
+        <div
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1500"
+          class="menu-card"
+          class="menu-card"
+        >
           <img src="img/4.jpg" alt="Espresso" class="menu-card-img" />
           <h3 class="menu-card-tittle">-Espresso-</h3>
           <p class="menu-card-price">IDR 15K</p>
         </div>
-        <div class="menu-card">
+        <div
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1500"
+          class="menu-card"
+          class="menu-card"
+        >
           <img src="img/5.jpg" alt="Espresso" class="menu-card-img" />
           <h3 class="menu-card-tittle">-Cappucino-</h3>
           <p class="menu-card-price">IDR 25K</p>
         </div>
-        <div class="menu-card">
+        <div
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1500"
+          class="menu-card"
+          class="menu-card"
+        >
           <img src="img/6.jpg" alt="Espresso" class="menu-card-img" />
           <h3 class="menu-card-tittle">-Americano-</h3>
           <p class="menu-card-price">IDR 15K</p>
@@ -130,8 +174,8 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-      <h2><span>Kontak</span> Kami</h2>
-      <p>
+      <h2 data-aos="fade-down"><span>Kontak</span> Kami</h2>
+      <p data-aos="fade-up">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo,
         molestias.
       </p>
@@ -143,7 +187,12 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
           class="map"
-        ></iframe>
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
+          ></iframe
+        >
 
         <form action="">
           <div class="input-group">
@@ -188,6 +237,8 @@
       feather.replace();
     </script>
 
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- My javascript -->
     <script src="js/script.js"></script>
   </body>
